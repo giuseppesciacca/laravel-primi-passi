@@ -30,6 +30,12 @@
 
     </header>
 
+    <main>
+        <div class="container">
+            <p class="text-center py-5">{{$presentation}}</p>
+        </div>
+    </main>
+
 
 
     <!-- Bootstrap JS Bundle -->

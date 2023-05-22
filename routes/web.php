@@ -22,11 +22,14 @@ Route::get('/', function () {
 Route::get('/about', function () {
     $title = 'This is About page';
 
-    return view('Home', compact('title'));
+    return view('about', compact('title'));
 })->name('about');
 
 Route::get('/ourMission', function () {
-    $title = 'This is our Mission';
+    $data = [
+        'title' => 'This is our Mission',
+        'presentation' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis voluptates error. Optio culpa aliquam ad similique, ullam eum maxime ex voluptatum ipsum natus, pariatur exercitationem officiis deserunt esse? Nulla.lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores autem distinctio quam, dolor sapiente aut deserunt ipsam sint, consequuntur expedita veniam fugit molestiae soluta minus quia exercitationem reprehenderit accusantium illum.'
+    ];
 
-    return view('Home', compact('title'));
+    return view('ourMission', $data);
 })->name('ourMission');
