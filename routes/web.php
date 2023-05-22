@@ -16,5 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $title = 'Hello World';
 
-    return view('home', compact('title'));
-});
+    return view('Home', compact('title'));
+})->name('home');
+
+Route::get('/about', function () {
+    $title = 'This is About page';
+
+    return view('Home', compact('title'));
+})->name('about');
+
+Route::get('/ourMission', function () {
+    $title = 'This is our Mission';
+
+    return view('Home', compact('title'));
+})->name('ourMission');
