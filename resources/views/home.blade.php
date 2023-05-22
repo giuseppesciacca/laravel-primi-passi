@@ -13,6 +13,21 @@
 <body>
     <header class="bg-dark text-center text-white py-5">
         <h1>{{$title}}</h1>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark pt-3">
+            <div class="container-fluid d-flex justify-content-center">
+
+                <div class="navbar-nav">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+
+                    <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+
+                    <a class="nav-link active text-white" aria-current="page" href="#">Our Mission</a>
+                </div>
+
+            </div>
+        </nav>
+
     </header>
 
 
